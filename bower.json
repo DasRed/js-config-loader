@@ -1,7 +1,7 @@
 {
     "name": "config-loader",
     "homepage": "https://github.com/DasRed/js-config-loader",
-    "main": "",
+    "main": "Loads json data from script of type json.",
     "license": "MIT",
     "ignore": [
         "**/.*",
