@@ -18,7 +18,8 @@
      * loads config from script type application json
      *
      * @param {String} element
-     * @param {Object} options
+     * @param {Object} [options]
+     * @param {Boolean} [options.throwError]
      */
     function ConfigLoader(element, options) {
         this.element = element;
