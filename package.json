@@ -1,0 +1,19 @@
+{
+  "name": "js-config-loader",
+  "version": "1.0.4",
+  "description": "Loads json data from script of type json.",
+  "main": "loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DasRed/js-config-loader.git"
+  },
+  "author": "Marco Starker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DasRed/js-config-loader/issues"
+  },
+  "homepage": "https://github.com/DasRed/js-config-loader#readme"
+}

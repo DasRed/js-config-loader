@@ -4,6 +4,12 @@ The config loader provides a easy and simple way to get configs from HTML (typic
 
 ## Install
 ```
+yarn add js-config-loader --save
+```
+```
+npm install js-config-loader --save
+```
+```
 bower install config-loader --save
 ```
 
