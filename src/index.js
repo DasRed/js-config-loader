@@ -55,7 +55,7 @@ export default class ConfigLoader {
      * @param {String} element
      * @param {Boolean} [throwError = false]
      */
-    constructor(element, {throwError = false}) {
+    constructor(element, {throwError = false} = {}) {
         this.element = element;
 
         this.throwError = throwError;
