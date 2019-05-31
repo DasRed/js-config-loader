@@ -1,4 +1,4 @@
-class ConfigLoader {
+export default class ConfigLoader {
     /**
      *
      * @return {*}
@@ -53,16 +53,11 @@ class ConfigLoader {
      * loads config from script type application json
      *
      * @param {String} element
-     * @param {Object} [options]
-     * @param {Boolean} [options.throwError]
+     * @param {Boolean} [throwError = false]
      */
-    constructor(element, options) {
+    constructor(element, {throwError = false}) {
         this.element = element;
 
-        options = options || {};
-
-        this.throwError = options.throwError !== undefined ? options.throwError : this.throwError;
+        this.throwError = throwError;
     }
 }
-
-export default ConfigLoader;

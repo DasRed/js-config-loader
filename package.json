@@ -1,11 +1,8 @@
 {
     "name": "js-config-loader",
-    "version": "1.0.7",
+    "version": "2.0.0",
     "description": "Loads json data from script of type json.",
-    "main": "loader.js",
-    "scripts": {
-        "build": "babel src -d ."
-    },
+    "main": "src/index.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/DasRed/js-config-loader.git"
@@ -16,8 +13,22 @@
         "url": "https://github.com/DasRed/js-config-loader/issues"
     },
     "homepage": "https://github.com/DasRed/js-config-loader#readme",
+    "scripts": {
+        "build": "rollup -c ./rollup.config.js",
+        "prepublishOnly": "npm run build"
+    },
     "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-preset-env": "^1.7.0"
+        "@babel/core": "^7.4.0",
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/plugin-transform-runtime": "^7.4.0",
+        "@babel/polyfill": "^7.4.0",
+        "@babel/preset-env": "^7.4.2",
+        "rollup": "^1.7.3",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-clear": "^2.0.7",
+        "rollup-plugin-commonjs": "^9.2.2",
+        "rollup-plugin-node-resolve": "^4.0.1",
+        "rollup-plugin-progress": "^1.1.1",
+        "rollup-plugin-terser": "^4.0.4"
     }
 }
