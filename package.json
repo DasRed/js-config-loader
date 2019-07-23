@@ -1,6 +1,6 @@
 {
     "name": "js-config-loader",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Loads json data from script of type json.",
     "main": "src/index.js",
     "repository": {
