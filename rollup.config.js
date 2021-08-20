@@ -1,7 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
-import {terser} from "rollup-plugin-terser";
 import clear from "rollup-plugin-clear";
+import {terser} from "rollup-plugin-terser";
 
 const babelOptionsES5 = {
     runtimeHelpers:  false,
@@ -22,7 +22,9 @@ const babelOptionsES5 = {
         ]
     ],
     plugins:         [
-        ["@babel/plugin-proposal-class-properties", {loose: true}]
+        ["@babel/plugin-proposal-class-properties", {loose: true}],
+        ["@babel/plugin-proposal-private-property-in-object", {loose: true}],
+        ["@babel/plugin-proposal-private-methods", {loose: true}],
     ]
 };
 
@@ -31,7 +33,9 @@ const babelOptionsES2018 = {
     externalHelpers: false,
     babelrc:         false,
     plugins:         [
-        ["@babel/plugin-proposal-class-properties", {loose: true}]
+        ["@babel/plugin-proposal-class-properties", {loose: true}],
+        ["@babel/plugin-proposal-private-property-in-object", {loose: true}],
+        ["@babel/plugin-proposal-private-methods", {loose: true}],
     ]
 };
 
